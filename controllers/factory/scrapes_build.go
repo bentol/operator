@@ -431,10 +431,10 @@ func generatePodScrapeConfig(
 			{Key: "source_labels", Value: []string{"__meta_kubernetes_namespace"}},
 			{Key: "target_label", Value: "namespace"},
 		},
-		{
-			{Key: "source_labels", Value: []string{"__meta_kubernetes_pod_container_name"}},
-			{Key: "target_label", Value: "container"},
-		},
+		//{
+		//{Key: "source_labels", Value: []string{"__meta_kubernetes_pod_container_name"}},
+		//{Key: "target_label", Value: "container"},
+		//},
 		{
 			{Key: "source_labels", Value: []string{"__meta_kubernetes_pod_name"}},
 			{Key: "target_label", Value: "pod"},
